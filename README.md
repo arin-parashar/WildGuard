@@ -1,76 +1,122 @@
 # WildGuard
-A human and wildlife co-occurrence alert and alarm system.
-WildGuard detects situations where humans and wild animals appear together in the same scene.
+A human–wildlife co-occurrence alert and alarm system.
+
+WildGuard detects situations where humans and wild animals appear together in the same scene and triggers alerts accordingly.
+
 It uses:
 
-MegaDetector (object detection)
+MegaDetector for object detection
 
-SpeciesNet (animal classification)
+SpeciesNet for animal species classification
 
 ESP32 serial communication for buzzer and light alerts
 
+# Project Structure
 
-Project Structure
 WildGuard/
 │
 ├── src/
 ├── models/
-│   └── md/
-│       └── md_v5a.0.0.pt
+│ └── md/
+│ └── md_v5a.0.0.pt
 │
 ├── external/
-│   └── MegaDetector/
+│ └── MegaDetector/
 │
 ├── requirements.txt
 └── README.md
 
-Installation
+# Installation
 
-1️⃣ Clone Repository
-git clone <your-repo-url>
+Step 1 – Clone Repository
+
+git clone <your-repository-url>
 cd WildGuard
-2️⃣ Create Virtual Environment
+
+Step 2 – Create Virtual Environment
+
 python -m venv venv
 venv\Scripts\activate
-3️⃣ Install Dependencies
+
+Step 3 – Install Dependencies
+
 pip install -r requirements.txt
-4️⃣ Install PyTorch
+
+Step 4 – Install PyTorch
+
 If using GPU (CUDA 11.8):
+
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-If CPU only:
+
+If using CPU only:
+
 pip install torch torchvision
 
+# Model Setup
 
-Model Setup
-🔹 MegaDetector
-Go to:
+# MegaDetector Model
+
+Download MegaDetector v5a from:
 https://lila.science/public/megadetector/md_v5a.0.0.pt
-Download the file
-Place it in:
+
+Create this folder if it does not exist:
+models/md/
+
+Place the downloaded file inside:
 models/md/md_v5a.0.0.pt
-🔹 MegaDetector Repository
-Inside project:
+
+MegaDetector Repository
+
+Inside the project directory:
+
 cd external
-git clone https://github.com/microsoft/CameraTraps.git MegaDetector
+git clone https://github.com/microsoft/CameraTraps.git
+ MegaDetector
 
+# SpeciesNet Setup
 
-🔹 SpeciesNet
-Install Kaggle CLI:
+Step 1 – Install Kaggle CLI
+
 pip install kaggle
-Download Kaggle API token from:
-https://www.kaggle.com/account
-Place kaggle.json inside:
-C:\Users\<your-username>\.kaggle\
-SpeciesNet model will download automatically on first run.
 
+Step 2 – Download Kaggle API Token
+
+Go to:
+https://www.kaggle.com/account
+
+Click “Create New API Token”
+
+Download kaggle.json
+
+Place it inside:
+C:\Users<your-username>.kaggle\
+
+SpeciesNet will automatically download the required model on first run.
 
 Running the Project
-From project root.
+
+From the project root directory:
+
 python src/main.py
 
+#ESP32 Setup (Optional)
 
-ESP32 Setup (Optional)
-If using hardware buzzer:
-Update COM port inside code:
+If using the hardware buzzer/light system, update the COM port inside the code:
+
 serial.Serial("COM3", 115200)
-Change "COM3" to your device port.
+
+Replace "COM3" with your ESP32 device port.
+
+# Features
+
+Human detection
+
+Animal detection
+
+Species classification
+
+Real-time threat detection
+
+GUI-based monitoring interface
+
+ESP32 serial alert triggering

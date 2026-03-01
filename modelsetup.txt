@@ -1,0 +1,56 @@
+🔹 A. MegaDetector Setup
+Step 1 — Clone MegaDetector Repository
+
+Inside your project folder:
+
+cd external
+git clone https://github.com/microsoft/CameraTraps.git MegaDetector
+
+Your folder should now contain:
+
+external/MegaDetector
+Step 2 — Download MegaDetector Model
+
+Download:
+
+MegaDetector v5a
+https://lila.science/public/megadetector/md_v5a.0.0.pt
+
+Create this folder:
+
+models/md/
+
+Place the downloaded file inside:
+
+models/md/md_v5a.0.0.pt
+🔹 B. SpeciesNet Setup
+
+SpeciesNet downloads automatically using Kaggle.
+
+Step 1 — Install Kaggle CLI
+
+Already included in requirements, but if needed:
+
+pip install kaggle
+Step 2 — Get Kaggle API Key
+
+Go to:
+https://www.kaggle.com/account
+
+Click Create New API Token
+
+Download kaggle.json
+
+Place it here:
+
+Windows:
+
+C:\Users\<your-username>\.kaggle\
+
+Create the .kaggle folder if it doesn’t exist.
+
+SpeciesNet will automatically download this model on first run:
+
+kaggle:google/speciesnet/pyTorch/v4.0.2a
+
+No manual file placement needed.

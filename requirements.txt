@@ -1,0 +1,22 @@
+# Core
+numpy
+opencv-python
+Pillow
+
+# Deep Learning
+torch
+torchvision
+
+# MegaDetector dependencies
+tqdm
+pyyaml
+matplotlib
+pandas
+scipy
+
+# SpeciesNet
+speciesnet
+kaggle
+
+# Hardware Communication
+pyserial

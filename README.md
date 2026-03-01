@@ -14,17 +14,29 @@ ESP32 serial communication for buzzer and light alerts
 # Project Structure
 
 WildGuard/
+
 │
+
 ├── src/
+
 ├── models/
+
 │ └── md/
+
 │ └── md_v5a.0.0.pt
+
 │
+
 ├── external/
+
 │ └── MegaDetector/
+
 │
+
 ├── requirements.txt
+
 └── README.md
+
 
 # Installation
 

@@ -111,7 +111,7 @@ From the project root directory:
 
 python src/main.py
 
-#ESP32 Setup (Optional)
+# ESP32 Setup (Optional)
 
 If using the hardware buzzer/light system, update the COM port inside the code:
 
@@ -131,4 +131,4 @@ Real-time threat detection
 
 GUI-based monitoring interface
 
-ESP32 serial alert triggering
+ESP32 serial alert and light system triggering

@@ -1,4 +1,4 @@
-﻿import os
+import os
 import sys
 import cv2
 import time
@@ -187,9 +187,13 @@ class WildGuardPro:
         self.danger_animals = {"tiger", "leopard", "bear", "crocodile", "alligator", "wolf", "hyena", "wild boar", "cheetah", "cougar", "jaguar", "panther", "lynx", "bobcat", "coyote", "fox"}
 
         try:
-            self.esp = serial.Serial("COM3", 115200, timeout=1)  # change COM port
-            time.sleep(2)  # allow ESP reset
+            self.esp = serial.Serial("COM3", 115200, timeout=1)
+            time.sleep(3)  # wait longer for ESP reset
             print("ESP32 Connected")
+
+            # send idle AFTER reset
+            self.esp.write(b"idle\n")
+            print("Sent: idle")
         except Exception as e:
             print("ESP32 not connected:", e)
 
@@ -388,12 +392,19 @@ class WildGuardPro:
         self.mode_chip.config(text=mode_text, fg="#67E0FF", bg="#101A1E", highlightbackground="#2E8FA5")
         self._apply_stage_style("monitoring")
         if self.esp:
-            self.esp.write(b"camera on\n")
+            if mode == "webcam":
+                self.esp.write(b"start\n")        # Green
+            elif mode == "file":
+                self.esp.write(b"camera on\n")    # Red
         threading.Thread(target=self.main_loop, args=(path,), daemon=True).start()
 
     def stop_engine(self):
         self.stop_event.set()
         self.is_running = False
+
+        if self.esp:
+            self.esp.write(b"idle\n")   # return to yellow
+            print("Sent: idle")
 
     def main_loop(self, path):
         if isinstance(path, str) and not path.lower().endswith(('.mp4', '.avi', '.mov')):

@@ -1,0 +1,56 @@
+{
+  "run_info": {
+    "input_folder": "C:\\Users\\arinr\\OneDrive\\Desktop\\Documents\\WildGuard\\data\\camera_trap",
+    "md_model": "C:\\Users\\arinr\\OneDrive\\Desktop\\Documents\\WildGuard\\models\\md\\md_v5a.0.0.pt",
+    "speciesnet_model": "kaggle:google/speciesnet/pyTorch/v4.0.2a",
+    "topk_species": 3,
+    "min_species_confidence": 0.7,
+    "timestamp": "2026-02-02 23:07:05"
+  },
+  "images": [
+    {
+      "file": "img1.jpg",
+      "person_detected": false,
+      "animal_detected": true,
+      "vehicle_detected": false,
+      "co_occurrence": false,
+      "top_species": [],
+      "num_animals": 2,
+      "num_people": 0,
+      "num_vehicles": 0
+    },
+    {
+      "file": "img2.jpg",
+      "person_detected": false,
+      "animal_detected": true,
+      "vehicle_detected": false,
+      "co_occurrence": false,
+      "top_species": [],
+      "num_animals": 1,
+      "num_people": 0,
+      "num_vehicles": 0
+    },
+    {
+      "file": "img3.jpg",
+      "person_detected": false,
+      "animal_detected": true,
+      "vehicle_detected": false,
+      "co_occurrence": false,
+      "top_species": [],
+      "num_animals": 1,
+      "num_people": 0,
+      "num_vehicles": 0
+    },
+    {
+      "file": "img4.jpg",
+      "person_detected": false,
+      "animal_detected": true,
+      "vehicle_detected": false,
+      "co_occurrence": false,
+      "top_species": [],
+      "num_animals": 2,
+      "num_people": 0,
+      "num_vehicles": 0
+    }
+  ]
+}

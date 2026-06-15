@@ -1,0 +1,69 @@
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+ENV/
+wildguard_env/
+Documents/
+*.pt
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+*.egg
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Large Binary Files
+# =========================
+*.dll
+*.lib
+*.so
+*.dylib
+*.pyd
+# =========================
+# Model Weights (Optional)
+# Uncomment if models are large
+# =========================
+# *.pt
+# *.pth
+# *.onnx
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp

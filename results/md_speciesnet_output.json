@@ -1,0 +1,170 @@
+{
+ "images": [
+  {
+   "file": "img1.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "conf": 0.972,
+     "bbox": [
+      0.4255,
+      0.1849,
+      0.5477,
+      0.8116
+     ],
+     "classifications": [
+      [
+       "0",
+       1.0
+      ]
+     ]
+    },
+    {
+     "category": "1",
+     "conf": 0.926,
+     "bbox": [
+      0.1622,
+      0.3316,
+      0.1333,
+      0.4449
+     ],
+     "classifications": [
+      [
+       "0",
+       0.999
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "file": "img2.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "conf": 0.961,
+     "bbox": [
+      0.1694,
+      0.3272,
+      0.6694,
+      0.6396
+     ],
+     "classifications": [
+      [
+       "3",
+       0.7
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "file": "img3.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "conf": 0.951,
+     "bbox": [
+      0.2324,
+      0.082,
+      0.6962,
+      0.6496
+     ],
+     "classifications": [
+      [
+       "5",
+       0.912
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "file": "img4.jpg",
+   "detections": [
+    {
+     "category": "1",
+     "conf": 0.89,
+     "bbox": [
+      0.5482,
+      0.3858,
+      0.3105,
+      0.2916
+     ],
+     "classifications": [
+      [
+       "7",
+       0.953
+      ]
+     ]
+    },
+    {
+     "category": "1",
+     "conf": 0.776,
+     "bbox": [
+      0.0317,
+      0.1557,
+      0.347,
+      0.4601
+     ],
+     "classifications": [
+      [
+       "9",
+       0.792
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "detection_categories": {
+  "1": "animal",
+  "2": "person",
+  "3": "vehicle"
+ },
+ "info": {
+  "detection_completion_time": "2026-02-02 23:06:59",
+  "format_version": "1.5",
+  "detector": "md_v5a.0.0.pt",
+  "detector_metadata": {
+   "url": "https://github.com/agentmorris/MegaDetector/releases/download/v5.0/md_v5a.0.1.pt",
+   "typical_detection_threshold": 0.2,
+   "conservative_detection_threshold": 0.05,
+   "image_size": 1280,
+   "model_type": "yolov5",
+   "normalized_typical_inference_speed": 1.0,
+   "md5": "60f8e7ec1308554df258ed1f4040bc4f",
+   "megadetector_version": "v5a.0.1"
+  },
+  "classifier": "kaggle:google/speciesnet/pyTorch/v4.0.2a",
+  "classification_completion_time": "2026-02-02 23:07:04"
+ },
+ "classification_categories": {
+  "0": "tiger",
+  "1": "wild cat",
+  "2": "ocelot",
+  "3": "striped hyaena",
+  "4": "aardwolf",
+  "5": "puma",
+  "6": "asiatic golden cat",
+  "7": "leopard",
+  "8": "jaguar",
+  "9": "hystrix species",
+  "10": "crested porcupine",
+  "11": "cape porcupine"
+ },
+ "classification_category_descriptions": {
+  "0": "e1c6c5b2-b808-4d50-bf01-90aa46f964c2;mammalia;carnivora;felidae;panthera;tigris;tiger",
+  "1": "96debe9f-7452-42c9-87ae-2e6b37f78025;mammalia;carnivora;felidae;felis;silvestris;wild cat",
+  "2": "22976d14-d424-4f18-a67a-d8e1689cefcc;mammalia;carnivora;felidae;leopardus;pardalis;ocelot",
+  "3": "2e5b35a8-563f-4372-9f32-cb869448c88a;mammalia;carnivora;hyaenidae;hyaena;hyaena;striped hyaena",
+  "4": "fa0d7796-5b11-450d-b15c-d49fdfe89d0e;mammalia;carnivora;hyaenidae;proteles;cristata;aardwolf",
+  "5": "9c564562-9429-405c-8529-04cff7752282;mammalia;carnivora;felidae;puma;concolor;puma",
+  "6": "b30d4c91-3790-4e28-8127-da8783aab3a8;mammalia;carnivora;felidae;catopuma;temminckii;asiatic golden cat",
+  "7": "aa73e0ac-973d-461d-914a-d2fa6e4b98a4;mammalia;carnivora;felidae;panthera;pardus;leopard",
+  "8": "9b7fea59-cfa3-499c-a420-bcf36277dcd8;mammalia;carnivora;felidae;panthera;onca;jaguar",
+  "9": "2a0223ce-bf36-4acd-996a-20ecdaa472ac;mammalia;rodentia;hystricidae;hystrix;;hystrix species",
+  "10": "cb86bb15-bf32-453f-930f-68da02c4b521;mammalia;rodentia;hystricidae;hystrix;cristata;crested porcupine",
+  "11": "3e764b23-9c39-4172-a386-09ecf92dffc5;mammalia;rodentia;hystricidae;hystrix;africaeaustralis;cape porcupine"
+ }
+}
